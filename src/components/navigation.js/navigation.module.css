@@ -1,0 +1,14 @@
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 200px;
+}
+
+.navigation-list {
+  max-width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
