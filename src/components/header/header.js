@@ -1,9 +1,11 @@
 import { Navigation } from '../navigation.js/navigaion';
 
+import './header.module.css';
+
 export const Header = () => {
   return (
-    <header class='header'>
-      <div class='header-container'>
+    <header className='header'>
+      <div className='header-container'>
         <Navigation />
       </div>
     </header>
