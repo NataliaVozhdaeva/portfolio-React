@@ -1,10 +1,13 @@
 import { Header } from './components/header/header';
-import styles from './app.module.css';
+import { Bio } from './components/bio/bio';
+
+import styles from './app.module.scss';
 
 function App() {
   return (
     <div className={styles.app}>
       <Header />
+      <Bio />
     </div>
   );
 }

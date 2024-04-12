@@ -1,4 +1,4 @@
-import styles from './button.module.css';
+import styles from './button.module.scss';
 
 export const Btn = ({ type = 'button', mode = 'dark', text }) => {
   return (

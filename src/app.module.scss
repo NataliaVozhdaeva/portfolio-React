@@ -1,3 +1,5 @@
+@import './utils/variables.scss';
+
 .app {
   display: flex;
   flex-direction: column;
@@ -11,8 +13,8 @@
   font-size: 18px;
 
   background-color: rgb(2, 0, 36);
-  background-image: linear-gradient(to top, var(--violet) 33.34%, rgba(67, 67, 67, 0)),
+  background-image: linear-gradient(to top, $violet 33.34%, rgba(67, 67, 67, 0)),
     radial-gradient(circle at center left, #2d005a 34.34%, rgba(67, 67, 67, 0) 100%),
-    linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    linear-gradient(90deg, $deep-blue 0%, rgba(9, 9, 121, 1) 35%, $light-blue 100%);
   color: #ffffff;
 }

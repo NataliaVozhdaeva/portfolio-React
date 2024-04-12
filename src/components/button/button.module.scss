@@ -1,14 +1,16 @@
+@import '../../utils/variables.scss';
+
 .btn {
   padding: 5px 10px;
 
   border: none;
   border-radius: 5px;
-  background: var(--light-blue);
+  background: $light-blue;
   transition: 0.3s;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--deep-blue);
-  color: var(--light-blue);
+  background-color: $deep-blue;
+  color: $light-blue;
 }

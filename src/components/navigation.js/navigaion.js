@@ -1,9 +1,9 @@
 import { Link } from '../link/link';
 import { Btn } from '../button/button';
 
-import { joinClassNames } from '../../utils/class-namer';
+import { joinClassNames } from '../../utils/helpers';
 
-import styles from './navigation.module.css';
+import styles from './navigation.module.scss';
 
 export const Navigation = () => {
   return (

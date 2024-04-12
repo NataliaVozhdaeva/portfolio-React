@@ -1,6 +1,6 @@
-import styles from './link.module.css';
+import styles from './link.module.scss';
 
-export const Link = ({ text, ancor }) => {
+export const Link = ({ text = '', ancor }) => {
   return (
     <a className={styles['link']} href={'#' + ancor}>
       {text}
