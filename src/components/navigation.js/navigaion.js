@@ -1,37 +1,28 @@
-// import './navigation.module.css';
+import { Link } from '../link/link';
+import { Btn } from '../button/button';
+
+import { joinClassNames } from '../../utils/class-namer';
+
 import styles from './navigation.module.css';
 
 export const Navigation = () => {
   return (
-    <nav classNames={styles['navigation']}>
-      <ul className={styles['navigation-list']}>
+    <nav className={styles['navigation']}>
+      <ul className={joinClassNames(styles['navigation-list'], styles['list'])}>
         <li className={styles['navigation-item']}>
-          <a className={styles['link']} href='#skills'>
-            Skills
-          </a>
+          <Link ancor='skills' text='Skills' />
         </li>
         <li className={styles['navigation-item']}>
-          <a className={styles['link navigation-link']} href='#about'>
-            About me
-          </a>
+          <Link ancor='about' text=' About me' />
         </li>
         <li className={styles['navigation-item']}>
-          <a className={styles['link navigation-link']} href='#experience'>
-            Projects
-          </a>
+          <Link ancor='experience' text='Projects' />
         </li>
         <li className={styles['navigation-item']}>
-          <a className={styles['link navigation-link']} href='#education'>
-            Education
-          </a>
-        </li>
-        <li className={styles['navigation-item']}>
-          <a className={styles['link navigation-link']} href='#code'>
-            Code example
-          </a>
+          <Link ancor='education' text='Education' />
         </li>
       </ul>
-      <button className={styles['link btn language-btn']}>RU</button>
+      <Btn text='RU' />
     </nav>
   );
 };
