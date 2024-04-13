@@ -1,3 +1,5 @@
+@import '../../utils/mixins.scss';
+
 .section-bio {
   width: 1440px;
   margin: 0 auto;
@@ -20,4 +22,15 @@
 .summary-text {
   font-size: 20px;
   text-align: justify;
+}
+
+.contact-list {
+  @include list;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 70vw;
+  margin: auto;
 }

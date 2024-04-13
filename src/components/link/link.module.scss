@@ -1,20 +1,60 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .link {
-  text-decoration: none;
-
-  color: $main-text;
+  @include link;
 }
 
-.link:visited {
-  color: $main-text;
+.contact-link {
+  @include beautyful-border;
+
+  position: relative;
+
+  &::before {
+    border-radius: 50%;
+  }
 }
 
-.link:focus {
-  font-weight: bold;
+.linkedin {
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background: url('../../assets/images/icons/linkedin.png');
+  }
 }
 
-.link:hover {
-  cursor: pointer;
-  text-shadow: 0 0 5px $pink;
+.mail {
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background: url('../../assets/images/icons/mail.png');
+  }
+}
+
+.github {
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+    background: url('../../assets/images/icons/git.png');
+  }
 }

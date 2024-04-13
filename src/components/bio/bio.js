@@ -1,7 +1,5 @@
 import { Link } from '../link/link';
 
-import { joinClassNames } from '../../utils/helpers';
-
 import styles from './bio.module.scss';
 
 export const Bio = () => {
@@ -31,26 +29,30 @@ export const Bio = () => {
           </div>
         </div>
       </div>
-      <ul className={joinClassNames(styles['list'], styles['contact-list'])}>
+      <ul className={styles['contact-list']}>
         <li className={styles['contact-item']}>
-          <Link ancor='https://www.linkedin.com/in/nataliavozhdaeva' />
-          {/* <a
-            class='link contact-link linkedin'
-            href='https://www.linkedin.com/in/nataliavozhdaeva/'
-            aria-label='contact-linkedin'></a> */}
+          <Link
+            ancor='https://www.linkedin.com/in/nataliavozhdaeva'
+            clsNames='contact-link linkedin'
+            attrName='aria-label'
+            attrValue='contact-linkedin'
+          />
         </li>
         <li className={styles['contact-item']}>
-          <Link ancor='https://github.com/NataliaVozhdaeva/' />
-
-          {/* <a
-            class='link contact-link github'
-            href='https://github.com/NataliaVozhdaeva/'
-            aria-label='contact-github'></a> */}
+          <Link
+            ancor='https://github.com/NataliaVozhdaeva/'
+            clsNames='contact-link github'
+            attrName='aria-label'
+            attrValue='contact-github'
+          />
         </li>
         <li className={styles['contact-item']}>
-          <Link ancor='mailto:NataliaVVozhdaeva@gmail.com' />
-
-          {/* <a class='link contact-link mail' href='mailto:NataliaVVozhdaeva@gmail.com' aria-label='contact-mail'></a> */}
+          <Link
+            ancor='mailto:NataliaVVozhdaeva@gmail.com'
+            clsNames='contact-link mail'
+            attrName='aria-label'
+            attrValue='contact-mail'
+          />
         </li>
       </ul>
     </section>

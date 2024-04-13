@@ -1,8 +1,17 @@
+import { joinClassNames } from '../../utils/helpers';
+
 import styles from './link.module.scss';
 
-export const Link = ({ text = '', ancor }) => {
+export const Link = ({ text = '', ancor, clsNames = '' }) => {
+  const addClsNames = () => {
+    return clsNames
+      .split(' ')
+      .map((el) => styles[el])
+      .join(' ');
+  };
+
   return (
-    <a className={styles['link']} href={'#' + ancor}>
+    <a href={'#' + ancor} className={joinClassNames(styles['link'], addClsNames())}>
       {text}
     </a>
   );

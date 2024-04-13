@@ -22,7 +22,7 @@ export const Navigation = () => {
           <Link ancor='education' text='Education' />
         </li>
       </ul>
-      <Btn text='RU' />
+      <Btn text='RU' clsNameMode='btn-lang' />
     </nav>
   );
 };

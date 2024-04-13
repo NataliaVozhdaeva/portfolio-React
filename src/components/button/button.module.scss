@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
 
 .btn {
   padding: 5px 10px;
@@ -13,4 +14,30 @@
   cursor: pointer;
   background-color: $deep-blue;
   color: $light-blue;
+}
+
+.btn-lang {
+  @include beautyful-border;
+
+  position: relative;
+  width: 45px;
+  height: 30px;
+
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 30px;
+
+    background: $light-blue;
+    border-radius: 5px;
+  }
+
+  &:hover::after {
+    background: $deep-blue;
+  }
 }
