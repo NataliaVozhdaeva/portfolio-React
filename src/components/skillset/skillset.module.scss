@@ -1,0 +1,39 @@
+@import '../../utils/mixins.scss';
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 80px;
+  width: 100%;
+
+  background: linear-gradient(to top, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad);
+  color: #000000;
+}
+
+.skills-list,
+.languages-list {
+  @include list;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+
+  height: 200px;
+
+  margin-bottom: 100px;
+}
+
+.languages-list {
+  row-gap: 30px;
+  flex-wrap: nowrap;
+
+  font-weight: bold;
+
+  & h4 {
+    margin: 0;
+  }
+}

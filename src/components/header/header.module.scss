@@ -1,4 +1,10 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 1440px;
+  min-height: 85vh;
   margin: 0 auto;
+  padding-bottom: 120px;
 }

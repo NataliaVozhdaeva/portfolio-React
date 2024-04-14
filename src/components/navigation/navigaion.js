@@ -1,14 +1,12 @@
 import { Link } from '../link/link';
 import { Btn } from '../button/button';
 
-import { joinClassNames } from '../../utils/helpers';
-
 import styles from './navigation.module.scss';
 
 export const Navigation = () => {
   return (
     <nav className={styles['navigation']}>
-      <ul className={joinClassNames(styles['navigation-list'], styles['list'])}>
+      <ul className={styles['navigation-list']}>
         <li className={styles['navigation-item']}>
           <Link ancor='skills' text='Skills' />
         </li>

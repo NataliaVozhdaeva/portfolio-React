@@ -1,5 +1,5 @@
 import { Header } from './components/header/header';
-import { Bio } from './components/bio/bio';
+import { Main } from './components/main/main';
 
 import styles from './app.module.scss';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={styles.app}>
       <Header />
-      <Bio />
+      <Main />
     </div>
   );
 }

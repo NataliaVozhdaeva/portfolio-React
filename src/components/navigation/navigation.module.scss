@@ -2,16 +2,21 @@
 
 .navigation {
   position: relative;
+
   display: flex;
   justify-content: space-between;
-  margin: 25px auto 100px;
+
+  width: 100%;
+  margin: 25px auto;
 }
 
 .navigation-list {
   @include list;
-  max-width: 70vw;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 15px;
+
+  max-width: 70vw;
 }

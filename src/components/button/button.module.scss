@@ -11,24 +11,29 @@
 }
 
 .btn:hover {
+  color: $light-blue;
+
   cursor: pointer;
   background-color: $deep-blue;
-  color: $light-blue;
 }
 
 .btn-lang {
   @include beautyful-border;
 
   position: relative;
+
   width: 45px;
   height: 30px;
 
   &::after {
-    content: '';
-    z-index: -1;
+    content: 'RU';
     position: absolute;
     top: 0;
     left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 45px;
     height: 30px;

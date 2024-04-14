@@ -10,6 +10,11 @@
 
   position: relative;
 
+  display: inline-block;
+
+  width: 50px;
+  height: 50px;
+
   &::before {
     border-radius: 50%;
   }
@@ -18,7 +23,6 @@
 .linkedin {
   &::after {
     content: '';
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -28,12 +32,15 @@
 
     background: url('../../assets/images/icons/linkedin.png');
   }
+
+  &::before {
+    animation-delay: 1s;
+  }
 }
 
 .mail {
   &::after {
     content: '';
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -48,13 +55,17 @@
 .github {
   &::after {
     content: '';
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
 
     width: 50px;
     height: 50px;
+
     background: url('../../assets/images/icons/git.png');
+  }
+
+  &::before {
+    animation-delay: 2s;
   }
 }
