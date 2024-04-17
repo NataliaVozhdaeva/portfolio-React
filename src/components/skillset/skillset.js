@@ -3,7 +3,7 @@ import styles from './skillset.module.scss';
 export const Skillset = () => {
   return (
     <section className={styles['skills']}>
-      <h2 className={styles['skills-title']}>Skills</h2>
+      <h2 className={styles['title']}>Skills</h2>
       <ul className={styles['skills-list']}>
         <li className={styles['skills-item']}>React (Redux)</li>
         <li className={styles['skills-item']}>BEM</li>
@@ -17,7 +17,7 @@ export const Skillset = () => {
         <li className={styles['skills-item']}>
           <ul className={styles['languages-list']}>
             <li className={styles['languages-item']}>
-              <h4 className={styles['languages-title']}>Languages:</h4>
+              <h4 className={styles['title']}>Languages:</h4>
             </li>
             <li className={styles['languages-item']}>English (B1+)</li>
             <li className={styles['languages-item']}>Italian (A1)</li>
@@ -26,7 +26,7 @@ export const Skillset = () => {
         </li>
       </ul>
       <div className={styles['about']}>
-        <h3 className={styles['about-title']}>A little bit more about me</h3>
+        <h3 className={styles['title']}>A little bit more about me</h3>
         <p>
           Have a degree in journalism. Began to be interested in programming at school, but at that time we had
           programming lessons just in a graduate year, and that wasn't enough to enter university. I was trying to study

@@ -25,6 +25,14 @@
   }
 }
 
+@mixin section-title {
+  padding: 80px;
+
+  & .title {
+    text-transform: uppercase;
+  }
+}
+
 @mixin beautyful-border {
   &::before {
     content: '';
